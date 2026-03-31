@@ -606,7 +606,7 @@ input[type='range']::-moz-range-thumb {
   position: relative;
   height: 4px;
   background: var(--border-lt);
-  margin: 48px 24px 56px;
+  margin: 72px 24px 80px;
 }
 
 .range-bar-fill {
@@ -640,10 +640,12 @@ input[type='range']::-moz-range-thumb {
   letter-spacing: 0.06em;
   white-space: nowrap;
   color: var(--ink);
+  text-align: center;
+  line-height: 1.4;
 }
 
-.range-label.above { top: -36px; }
-.range-label.below { bottom: -36px; }
+.range-label.above { bottom: calc(100% + 10px); top: auto; }
+.range-label.below { top: calc(100% + 10px); bottom: auto; }
 
 .range-price {
   display: block;
