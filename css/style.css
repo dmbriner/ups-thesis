@@ -416,6 +416,52 @@ section + section { border-top: 1px solid var(--border-xlt); }
 
 .punchline strong { font-style: italic; }
 
+.punchline a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--border-lt);
+  text-underline-offset: 3px;
+}
+.punchline a:hover {
+  text-decoration-color: var(--ink);
+}
+
+/* Source block */
+.source-block {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-lt);
+}
+.source-block-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 10px;
+}
+.source-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.source-block li {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--ink-muted);
+  padding: 3px 0;
+  border-bottom: 1px solid var(--border-xlt);
+}
+.source-block li:last-child { border-bottom: none; }
+.source-block a {
+  color: var(--ink-mid);
+  text-decoration: underline;
+  text-decoration-color: var(--border-lt);
+  text-underline-offset: 2px;
+}
+.source-block a:hover { color: var(--ink); text-decoration-color: var(--ink); }
+
 
 /* ============================================================
    CALCULATOR
